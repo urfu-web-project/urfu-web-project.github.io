@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head> 
+     <title>Form!!!</title>
+	 <link href="style-Form1.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+      
+	 <form action="formdata.php" method="GET" name="form1">
+	 <fieldset>
+	 <legend><h2>Ввод личных данныx</h2></legend>
+	     <p> <label>Введите ФИО: <input type="text" name="name" maxlength="40" size="31"> </label> </p>
+		 <p> <label>Введите номер вашего телефона: <input type="text" name="телефон" maxlength="12" size="12"> </label> </p>
+	 </fieldset>
+	 <fieldset>
+	 <legend><h2>Вопросы</h2></legend>
+	     <p>Вы живете в 3 общежитии? <label>Да<input type="radio" name="question" value="Да"></label>
+		 <label>Нет<input type="radio" name="question" value="Нет"></label></p>
+		 <p> <label>Номер вашей комнаты: <input type="text" name="комната" maxlength="20" size="20"> </label> </p>
+		 
+		 <p>На каком вы курсе?</p>
+		
+		 <p>
+		     <select name="курс">
+			     <option>1</option>
+				 <option>2</option>
+				 <option>3</option>
+				 <option>4</option>
+				 
+			 </select>
+		 </p> 
+		 <p>Шаблоны проблем:</p>
+		 
+		 <p>
+		     <select name="Проблема">
+			     <option>Нужна помощь в настройке роутера</option>
+				 <option>Не знаю, как правильно подключать провод</option>
+				 <option>Не знаю где получать логин и пароль</option>
+				 <option>Не знаю, как оплачивать интернет</option>
+				 <option>Другое...</option>
+			 </select>
+		 </p> 
+		 
+		 <!--
+		 <p>
+		     <label><input type="checkbox" name="Нужна помощь в настройке роутера">Нужна помощь в настройке роутера</label></br>
+			 <label><input type="checkbox" name="Не знаю, как правильно подключать провод">Не знаю, как правильно подключать провод</label></br>
+			 <label><input type="checkbox" name="Другое">Другое</label>
+		 </p>
+		 -->	 
+         		 
+		 </fieldset>
+		 <fieldset>
+		 <p>Поделитесь с нами вашей проблемой</p>
+		 <textarea name="text" cols="33" rows="6"></textarea>
+		 </fieldset>
+		 <p> <input type="reset" name="reset button" value="Очистить"> 
+		 <input type="submit" name="submit button" value="Отправить"> </p>
+	 </form>
+	 
+</body>
+
+
+</html>
